@@ -4,7 +4,7 @@
 \alias{plotDataBoxplot}
 \title{Boxplot per class}
 \usage{
-plotDataBoxplot(output, var, grl = TRUE, ...)
+plotDataBoxplot(output, var, grl = TRUE, pkg = c("ggplot2", "plotly"), ...)
 }
 \arguments{
 \item{output}{object returned by \emph{mixtCompLearn} function from \emph{RMixtComp} or \emph{rmcMultiRun} function from \emph{RMixtCompIO}}
@@ -13,10 +13,12 @@ plotDataBoxplot(output, var, grl = TRUE, ...)
 
 \item{grl}{if TRUE plot the general distribution of the data}
 
+\item{pkg}{"ggplot2" or "plotly". Package used to plot}
+
 \item{...}{other parameters (see \emph{Details})}
 }
 \description{
-Boxplot per class
+Display a boxplot (5%-25%-50%-75%-95% quantile) for the given variable for all classes
 }
 \details{
 For functional data, three other parameters are available:
@@ -57,15 +59,18 @@ plotDataBoxplot(resLearn, "var1")
 
 }
 \seealso{
-Other plot: \code{\link{heatmapClass}},
-  \code{\link{heatmapTikSorted}}, \code{\link{heatmapVar}},
-  \code{\link{histMisclassif}},
-  \code{\link{plot.MixtComp}},
-  \code{\link{plotConvergence}}, \code{\link{plotDataCI}},
-  \code{\link{plotDiscrimClass}},
-  \code{\link{plotDiscrimVar}},
-  \code{\link{plotParamConvergence}},
-  \code{\link{plotProportion}}
+Other plot: 
+\code{\link{heatmapClass}()},
+\code{\link{heatmapTikSorted}()},
+\code{\link{heatmapVar}()},
+\code{\link{histMisclassif}()},
+\code{\link{plot.MixtComp}()},
+\code{\link{plotConvergence}()},
+\code{\link{plotDataCI}()},
+\code{\link{plotDiscrimClass}()},
+\code{\link{plotDiscrimVar}()},
+\code{\link{plotParamConvergence}()},
+\code{\link{plotProportion}()}
 }
 \author{
 Matthieu MARBAC

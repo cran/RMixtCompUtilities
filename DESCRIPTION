@@ -1,8 +1,8 @@
 Package: RMixtCompUtilities
 Type: Package
 Title: Utility Functions for 'MixtComp' Outputs
-Version: 4.0.0
-Date: 2019-08-26
+Version: 4.1.0
+Date: 2019-12-16
 Authors@R: c(person("Vincent", "Kubicki", role = "aut"),
              person("Christophe", "Biernacki", role = "aut"),
              person("Quentin", "Grimonprez", role = c("aut", "cre"), email = "quentin.grimonprez@inria.fr"),
@@ -19,10 +19,10 @@ URL: https://github.com/modal-inria/MixtComp,
 BugReports: https://github.com/modal-inria/MixtComp/issues
 Imports: plotly, ggplot2, scales
 Suggests: testthat, xml2, RMixtCompIO, Rmixmod, blockcluster
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2019-08-27 08:11:13 UTC; grimonprez
+Packaged: 2019-12-19 15:11:31 UTC; grimonprez
 Author: Vincent Kubicki [aut],
   Christophe Biernacki [aut],
   Quentin Grimonprez [aut, cre],
@@ -31,4 +31,4 @@ Author: Vincent Kubicki [aut],
   Serge Iovleff [ctb]
 Maintainer: Quentin Grimonprez <quentin.grimonprez@inria.fr>
 Repository: CRAN
-Date/Publication: 2019-08-27 09:50:02 UTC
+Date/Publication: 2019-12-19 17:50:22 UTC

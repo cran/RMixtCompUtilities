@@ -4,8 +4,13 @@
 \alias{plot.MixtComp}
 \title{Plot of a \emph{MixtComp} object}
 \usage{
-\method{plot}{MixtComp}(x, nVarMaxToPlot = 3, pkg = c("ggplot2",
-  "plotly"), ...)
+\method{plot}{MixtComp}(
+  x,
+  nVarMaxToPlot = 3,
+  pkg = c("ggplot2", "plotly"),
+  plotData = c("CI", "Boxplot"),
+  ...
+)
 }
 \arguments{
 \item{x}{\emph{MixtComp} object}
@@ -14,7 +19,9 @@
 
 \item{pkg}{"ggplot2" or "plotly". Package used to plot}
 
-\item{...}{Not used.}
+\item{plotData}{"CI" or "Boxplot". If "CI", uses \link{plotDataCI} function. If "Boxplot", uses \link{plotDataBoxplot}}
+
+\item{...}{extra parameter for \link{plotDataCI}}
 }
 \description{
 Plot of a \emph{MixtComp} object
@@ -50,15 +57,18 @@ plot(resLearn)
 \seealso{
 \code{mixtCompLearn} \code{mixtCompPredict}
 
-Other plot: \code{\link{heatmapClass}},
-  \code{\link{heatmapTikSorted}}, \code{\link{heatmapVar}},
-  \code{\link{histMisclassif}},
-  \code{\link{plotConvergence}},
-  \code{\link{plotDataBoxplot}}, \code{\link{plotDataCI}},
-  \code{\link{plotDiscrimClass}},
-  \code{\link{plotDiscrimVar}},
-  \code{\link{plotParamConvergence}},
-  \code{\link{plotProportion}}
+Other plot: 
+\code{\link{heatmapClass}()},
+\code{\link{heatmapTikSorted}()},
+\code{\link{heatmapVar}()},
+\code{\link{histMisclassif}()},
+\code{\link{plotConvergence}()},
+\code{\link{plotDataBoxplot}()},
+\code{\link{plotDataCI}()},
+\code{\link{plotDiscrimClass}()},
+\code{\link{plotDiscrimVar}()},
+\code{\link{plotParamConvergence}()},
+\code{\link{plotProportion}()}
 }
 \author{
 Quentin Grimonprez

@@ -54,7 +54,7 @@ extractCIGaussianVble = function(var, data, class, grl){
 # @author Matthieu Marbac
 extractCIPoissonVble = function(var, data, class, grl){
   theta <- as.array(data$variable$param[[var]]$stat[class,1])
-  if (grl)  theta <- cbind(theta, mean(data$variable$data[[var]]$completed))
+  if (grl)  theta <- c(theta, mean(data$variable$data[[var]]$completed))
   return(list(mean = theta, lower = qpois(0.025, theta), uppers=qpois(0.975, theta)))
 }
 
@@ -242,7 +242,7 @@ extractBoundsBoxplotNumericalVble <- function(var, data, class = 1:data$algo$nCl
     if (any(tmp==0)) tmp[which(tmp==0)] <- 1
     if (any(tmp>length(obs))) tmp[which(tmp>length(obs))] <- length(obs)
     thresholds <- rbind(thresholds, obs[tmp])
-    rownames(thresholds)[nrow(thresholds)] <- "general"
+    rownames(thresholds)[nrow(thresholds)] <- "all"
   }
   
   return(thresholds)
@@ -275,7 +275,7 @@ extractBoundsBoxplotCategoricalVble <- function(var, data, class = 1:data$algo$n
     obs <- sort(table(data$variable$data[[var]]$completed), decreasing = TRUE)
     obs <- obs/sum(obs)
     probs <- rbind(probs, obs)
-    rownames(probs)[nrow(probs)] <- "general"
+    rownames(probs)[nrow(probs)] <- "all"
   }
   return(list(levels = levels, probs = probs))
 }
