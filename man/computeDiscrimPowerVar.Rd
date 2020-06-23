@@ -5,12 +5,14 @@
 \alias{computeDiscrimPowerClass}
 \title{Discriminative power}
 \usage{
-computeDiscrimPowerVar(outMixtComp)
+computeDiscrimPowerVar(outMixtComp, class = NULL)
 
 computeDiscrimPowerClass(outMixtComp)
 }
 \arguments{
 \item{outMixtComp}{object of class \emph{MixtCompLearn} or \emph{MixtComp} obtained using \code{mixtCompLearn} or \code{mixtCompPredict} functions from \code{RMixtComp} package or \code{rmcMultiRun} from \code{RMixtCompIO} package.}
+
+\item{class}{NULL or a number of classes. If NULL, return the discrimative power of variables globally otherwise return the discrimative power of variables in the given class}
 }
 \value{
 the discriminative power
@@ -23,6 +25,9 @@ The discriminative power of variable j is defined by 1 - C(j)
 \deqn{C(j)=  - \sum_{k=1}^K sum_{i=1}^n P(Z_i=k|x_{ij}) \log(P(Z_i=k|x_{ij})) / (n*\log(K))}
 
 A high value (close to one) means that the variable is highly discriminating. A low value (close to zero) means that the variable is poorly discriminating.
+
+The discriminative power of variable j in class k is defined by 1 - C(j)
+\deqn{C(j)=  - sum_{i=1}^n P(Z_i!=k|x_{ij}) \log(P(Z_i!=k|x_{ij})) / (n*\log(2))}
 
 
 The discriminative power of class k is defined by 1 - D(k)
@@ -55,6 +60,7 @@ resLearn <- rmcMultiRun(algo, dataLearn, model, nRun = 3)
 
 
 discVar <- computeDiscrimPowerVar(resLearn)
+discVarInClass1 <- computeDiscrimPowerVar(resLearn, class = 1)
 discClass <- computeDiscrimPowerClass(resLearn)
 
 # graphic representation of discriminant variables
