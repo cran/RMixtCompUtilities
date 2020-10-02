@@ -1,14 +1,15 @@
 Package: RMixtCompUtilities
 Type: Package
 Title: Utility Functions for 'MixtComp' Outputs
-Version: 4.1.2
-Date: 2020-06-04
+Version: 4.1.3
+Date: 2020-09-29
 Authors@R: c(person("Vincent", "Kubicki", role = "aut"),
              person("Christophe", "Biernacki", role = "aut"),
-             person("Quentin", "Grimonprez", role = c("aut", "cre"), email = "quentin.grimonprez@inria.fr"),
+             person("Quentin", "Grimonprez", role = "aut"),
              person("Matthieu", "Marbac-Lourdelle", role = "aut"),
              person("Étienne", "Goffinet", role = "ctb"),
-             person("Serge", "Iovleff", role = "ctb"))
+             person("Serge", "Iovleff", role = "ctb"),
+             person("Julien", "Vandaele", role = c("ctb", "cre"), email = "julien.vandaele@inria.fr"))
 Copyright: Inria - Université de Lille - CNRS
 License: AGPL-3
 Description: Mixture Composer <https://github.com/modal-inria/MixtComp> is a project to build mixture models with
@@ -19,16 +20,17 @@ URL: https://github.com/modal-inria/MixtComp,
 BugReports: https://github.com/modal-inria/MixtComp/issues
 Imports: plotly, ggplot2, scales
 Suggests: testthat, xml2, RMixtCompIO (>= 4.0.4), Rmixmod, blockcluster
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2020-06-22 14:50:13 UTC; grimonprez
+Packaged: 2020-09-29 09:07:23 UTC; vandaele
 Author: Vincent Kubicki [aut],
   Christophe Biernacki [aut],
-  Quentin Grimonprez [aut, cre],
+  Quentin Grimonprez [aut],
   Matthieu Marbac-Lourdelle [aut],
   Étienne Goffinet [ctb],
-  Serge Iovleff [ctb]
-Maintainer: Quentin Grimonprez <quentin.grimonprez@inria.fr>
+  Serge Iovleff [ctb],
+  Julien Vandaele [ctb, cre]
+Maintainer: Julien Vandaele <julien.vandaele@inria.fr>
 Repository: CRAN
-Date/Publication: 2020-06-23 05:31:03 UTC
+Date/Publication: 2020-10-02 21:42:09 UTC
