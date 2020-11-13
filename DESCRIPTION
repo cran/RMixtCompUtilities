@@ -1,8 +1,8 @@
 Package: RMixtCompUtilities
 Type: Package
 Title: Utility Functions for 'MixtComp' Outputs
-Version: 4.1.3
-Date: 2020-09-29
+Version: 4.1.4
+Date: 2020-11-12
 Authors@R: c(person("Vincent", "Kubicki", role = "aut"),
              person("Christophe", "Biernacki", role = "aut"),
              person("Quentin", "Grimonprez", role = "aut"),
@@ -23,7 +23,7 @@ Suggests: testthat, xml2, RMixtCompIO (>= 4.0.4), Rmixmod, blockcluster
 RoxygenNote: 7.1.1
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2020-09-29 09:07:23 UTC; vandaele
+Packaged: 2020-11-12 15:43:04 UTC; vandaele
 Author: Vincent Kubicki [aut],
   Christophe Biernacki [aut],
   Quentin Grimonprez [aut],
@@ -33,4 +33,4 @@ Author: Vincent Kubicki [aut],
   Julien Vandaele [ctb, cre]
 Maintainer: Julien Vandaele <julien.vandaele@inria.fr>
 Repository: CRAN
-Date/Publication: 2020-10-02 21:42:09 UTC
+Date/Publication: 2020-11-13 06:30:13 UTC
