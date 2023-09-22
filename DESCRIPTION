@@ -1,8 +1,8 @@
 Package: RMixtCompUtilities
 Type: Package
 Title: Utility Functions for 'MixtComp' Outputs
-Version: 4.1.5
-Date: 2023-06-14
+Version: 4.1.6
+Date: 2023-09-21
 Authors@R: c(person("Vincent", "Kubicki", role = "aut"),
              person("Christophe", "Biernacki", role = "aut"),
              person("Quentin", "Grimonprez", role = c("aut", "cre"), email = "quentingrim@yahoo.fr"),
@@ -22,7 +22,7 @@ Suggests: testthat, xml2, RMixtCompIO (>= 4.0.4), Rmixmod
 RoxygenNote: 7.2.3
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2023-06-14 11:39:48 UTC; quentin
+Packaged: 2023-09-21 12:15:35 UTC; quentin
 Author: Vincent Kubicki [aut],
   Christophe Biernacki [aut],
   Quentin Grimonprez [aut, cre],
@@ -32,4 +32,4 @@ Author: Vincent Kubicki [aut],
   Julien Vandaele [ctb]
 Maintainer: Quentin Grimonprez <quentingrim@yahoo.fr>
 Repository: CRAN
-Date/Publication: 2023-06-14 23:42:11 UTC
+Date/Publication: 2023-09-22 12:30:09 UTC
